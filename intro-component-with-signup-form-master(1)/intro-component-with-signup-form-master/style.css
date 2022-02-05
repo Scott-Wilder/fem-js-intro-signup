@@ -92,7 +92,7 @@ h1,
   color: white;
 }
 .purp-box {
-  background-color: blueviolet;
+  background-color: #5e55a1;
   margin: 2rem;
   width: 22rem;
   border-radius: 12px;
@@ -114,13 +114,55 @@ h1,
   padding: 2rem;
   border-radius: 12px;
 }
+#fname,
+#lname,
+#email,
+#password {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+#submit {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: white;
+}
 .hero {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5rem;
 }
 #tos {
+  padding-top: 1rem;
   color: black;
+}
+#error-img {
+  position: absolute;
+  right: 2.5rem;
+  margin-top: -2.5rem;
+  visibility: hidden;
+}
+#error-msg {
+  position: absolute;
+  right: 2rem;
+  visibility: hidden;
+  color: red;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: red;
+}
+.form-control.error #error-img {
+  visibility: visible;
+}
+.form-control.error #error-msg {
+  visibility: visible;
 }
