@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./design\desktop-active.PNG)
-![Mobile View](./design\mobile-active.PNG)
+![Desktop View](./design/desktop-active.PNG)
+![Mobile View](./design/mobile-active.PNG)
 
 
 ### Links
