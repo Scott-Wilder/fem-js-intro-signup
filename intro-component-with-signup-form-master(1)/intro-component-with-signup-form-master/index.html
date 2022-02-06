@@ -27,44 +27,47 @@
     </style>
   </head>
   <body>
-    <div class="background-img">
-      <img src="images\bg-intro-mobile.png" alt="mobile" />
-    </div>
     <div class ="hero">
-    <h1>Learn to code by watching others</h1>
-    <p id="details">
-      See how experienced developers solve problems in real-time. Watching
-      scripted tutorials is great, but understanding how developers think is
-      invaluable.
-    </p>
-    <div class =purp-box>
-      <p id="trial">Try it free 7 days then <br /> $20/mo. thereafter</p>
+      <img id="background-img-mobile" src="images\bg-intro-mobile.png" alt="mobile" />
+      <img id="background-img-desktop" src="images\bg-intro-desktop.png" alt="desktop" />
+      <div class="desktop-1">
+        <h1>Learn to code by watching others</h1>
+        <p id="details">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="desktop-2">
+        <div class =purp-box>
+          <p id="trial"><em style="font-weight: bolder;">Try it free 7 days</em>then<br /> $20/mo. thereafter</p>
+        </div>
+          <form id="form" class="form">
+            <div class ="form-control">
+              <input type="text" id="fname" name="fname" placeholder="Fist Name" />
+              <img id="error-img" src="images\icon-error.svg" alt="error-icon">
+              <small id="error-msg">Error message</small><br />
+            </div>
+            <div class ="form-control">
+              <input type="text" id="lname" name="lname" placeholder="Last Name" />
+              <img id="error-img" src="images\icon-error.svg" alt="error-icon">
+              <small id="error-msg">Error message</small><br />
+            </div>
+            <div class ="form-control">
+              <input type="text" id="email" name="email" placeholder="Email Address"/>
+              <img id="error-img" src="images\icon-error.svg" alt="error-icon">
+              <small id="error-msg">Error message</small><br />
+            </div>
+            <div class ="form-control">
+              <input type="password" id="password" name="password" placeholder="Password" />
+              <img id="error-img" src="images\icon-error.svg" alt="error-icon"> 
+              <small id="error-msg">Error message</small></br>
+            </div>
+            <input id="submit" type="submit" value="Claim your free trial" />
+            <p id="tos">By clicking the button, you are agreeing to our <em style="color: rgb(249, 123, 123)">Terms and Services</em></p>
+          </form>
+      </div>
     </div>
-      <form id="form" class="form">
-        <div class ="form-control">
-          <input type="text" id="fname" name="fname" placeholder="Fist Name" />
-          <img id="error-img" src="images\icon-error.svg" alt="error-icon">
-          <small id="error-msg">Error message</small><br />
-        </div>
-        <div class ="form-control">
-          <input type="text" id="lname" name="lname" placeholder="Last Name" />
-          <img id="error-img" src="images\icon-error.svg" alt="error-icon">
-          <small id="error-msg">Error message</small><br />
-        </div>
-        <div class ="form-control">
-          <input type="text" id="email" name="email" placeholder="Email Address"/>
-          <img id="error-img" src="images\icon-error.svg" alt="error-icon">
-          <small id="error-msg">Error message</small><br />
-        </div>
-        <div class ="form-control">
-          <input type="password" id="password" name="password" placeholder="Password" />
-          <img id="error-img" src="images\icon-error.svg" alt="error-icon"> 
-          <small id="error-msg">Error message</small></br>
-        </div>
-        <input id="submit" type="submit" value="Claim your free trial" />
-        <p id="tos">By clicking the button, you are agreeing to our Terms and Services</p>
-      </form>
-  </div>
     <footer>
       <p class="attribution">
         Challenge by

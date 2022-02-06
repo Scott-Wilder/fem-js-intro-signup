@@ -101,9 +101,12 @@ h1,
 #trial {
   padding: 1rem;
 }
-.background-img {
+#background-img-mobile {
   position: absolute;
   z-index: -1;
+}
+#background-img-desktop{
+  visibility: hidden;
 }
 .form {
   background-color: white;
@@ -113,6 +116,7 @@ h1,
   width: 22rem;
   padding: 2rem;
   border-radius: 12px;
+  margin-left: 2rem;
 }
 #fname,
 #lname,
@@ -120,6 +124,7 @@ h1,
 #password {
   margin: 0.5rem;
   padding: 0.5rem;
+  width: 95%;
 }
 #submit {
   margin-top: 1rem;
@@ -133,21 +138,23 @@ h1,
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
+}
+.desktop-1 {
+  margin-top: -5rem;
 }
 #tos {
   padding-top: 1rem;
-  color: black;
+  color: hsl(246, 25%, 77%);
 }
 #error-img {
-  position: absolute;
-  right: 2.5rem;
+  margin-left: 15rem;
   margin-top: -2.5rem;
   visibility: hidden;
+  padding-bottom: .5rem;
 }
 #error-msg {
-  position: absolute;
-  right: 2rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
   visibility: hidden;
   color: red;
 }
@@ -166,3 +173,45 @@ h1,
 .form-control.error #error-msg {
   visibility: visible;
 }
+@media(min-width:  400px){
+  .form {
+    margin-left: 0rem;
+  }
+  #background-img-mobile{
+    visibility: hidden;
+  }
+  #background-img-desktop {
+    visibility: visible;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  .hero {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #error-img{
+    right: 7rem;
+  }
+  #error-msg {
+    right: 7rem;
+  }
+  .desktop-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 425px;
+  }
+  .desktop-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5rem;
+  }
+}
+

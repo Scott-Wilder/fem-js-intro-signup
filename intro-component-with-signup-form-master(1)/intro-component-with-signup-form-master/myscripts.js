@@ -48,6 +48,7 @@ function checkInputs() {
   } else {
     setSuccessFor(password);
   }
+
 }
 // error class
 function setErrorFor(input, message) {
