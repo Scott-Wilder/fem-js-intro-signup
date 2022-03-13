@@ -55,7 +55,7 @@ Users should be able to:
 
 ### Continued development
 
-Incorparting more JS into my front end projects.
+Incorporating more JS into my front end projects.
 
 ### Useful resources
 
